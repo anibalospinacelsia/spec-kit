@@ -44,6 +44,7 @@ Specify supports multiple AI agents by generating agent-specific command files a
 | **Roo Code** | `.roo/rules/` | Markdown | N/A (IDE-based) | Roo Code IDE |
 | **CodeBuddy CLI** | `.codebuddy/commands/` | Markdown | `codebuddy` | CodeBuddy CLI |
 | **Amazon Q Developer CLI** | `.amazonq/prompts/` | Markdown | `q` | Amazon Q Developer CLI |
+| **Trae AI** | `.trae/workflows/` | Markdown | `trae` | Trae AI IDE-based Agent |
 | **Amp** | `.agents/commands/` | Markdown | `amp` | Amp CLI |
 
 ### Step-by-Step Integration Guide
@@ -108,7 +109,7 @@ Modify `.github/workflows/scripts/create-release-packages.sh`:
 ##### Add to ALL_AGENTS array
 
 ```bash
-ALL_AGENTS=(claude gemini copilot cursor-agent qwen opencode windsurf q)
+ALL_AGENTS=(claude gemini copilot cursor-agent qwen opencode windsurf q trae)
 ```
 
 ##### Add case statement for directory structure
